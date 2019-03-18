@@ -240,7 +240,7 @@ namespace computer_frame
                 flag = false;
             }
             textBox1.Text += "0";
-            if (c == "÷")
+            if (c == "÷" && textBox1.Text == "0")
             {
                 textBox1.Clear();
                 MessageBox.Show("除数不能为零", "错误提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
